@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CreateGroupProfile">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1A1A1D">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="413dp"
+            android:layout_height="70dp"
+            android:background="@drawable/login_register_gradient"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="222dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/roboto_slab"
+            android:text="GROUP PROFILE"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/imageView"
+            app:layout_constraintHorizontal_bias="0.848"
+            app:layout_constraintStart_toStartOf="@+id/view"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="79dp"
+            android:layout_height="70dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon2"
+            app:tint="@color/white" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/groupProfile"
+            android:layout_width="154dp"
+            android:layout_height="154dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="36dp"
+            android:src="@drawable/blank_profile"
+            app:civ_border_color="#C30735"
+            app:civ_border_width="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+        <EditText
+            android:id="@+id/groupName"
+            android:layout_width="351dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/login_register_design"
+            android:drawableLeft="@drawable/ic_baseline_person_24_white"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:fontFamily="@font/roboto_slab"
+            android:includeFontPadding="false"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="#4E4E50"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/groupProfile" />
+
+        <EditText
+            android:id="@+id/groupAbout"
+            android:layout_width="351dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="76dp"
+            android:background="@drawable/login_register_design"
+            android:drawableLeft="@drawable/ic_baseline_info_24"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:fontFamily="@font/roboto_slab"
+            android:includeFontPadding="false"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="#4E4E50"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/groupName" />
+
+        <TextView
+            android:id="@+id/editName2"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/roboto_slab"
+            android:text="Name"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.126"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/groupProfile" />
+
+        <TextView
+            android:id="@+id/editName3"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="56dp"
+            android:fontFamily="@font/roboto_slab"
+            android:text="About"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.126"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/groupName" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/groupCreate"
+            android:layout_width="326dp"
+            android:layout_height="64dp"
+            android:background="@drawable/login_register_button"
+            android:fontFamily="@font/roboto_slab"
+            android:text="Create Group"
+            android:textColor="#FFFFFF"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/groupAbout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

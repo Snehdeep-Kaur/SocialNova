@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Register">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1A1A1D">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_marginBottom="501dp"
+            android:background="@drawable/login_register_gradient"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="118dp"
+            android:layout_height="36dp"
+            android:fontFamily="@font/roboto_slab"
+            android:text="LOGIN"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.945"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/icon2"
+            app:tint="@color/white"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/ccpL"
+            android:layout_width="100dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/login_register_design"
+            app:ccp_contentColor="@color/white"
+            android:gravity="center"
+            app:layout_constraintEnd_toStartOf="@+id/phnnoL"
+            app:layout_constraintHorizontal_bias="0.909"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+        <EditText
+            android:id="@+id/phnnoL"
+            android:layout_width="259dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/login_register_design"
+            android:drawableLeft="@drawable/ic_baseline_call_16"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:fontFamily="@font/roboto_slab"
+            android:hint="Phone Number"
+            android:includeFontPadding="false"
+            android:inputType="phone"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="#4E4E50"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="355dp"
+            android:layout_height="89dp"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/roboto_slab"
+            android:text="Upon clicking on continue an OTP will be sent to your phone, Data charges may apply"
+            android:textAlignment="center"
+            android:textColor="#4E4E50"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phnnoL" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/contn"
+            android:layout_width="326dp"
+            android:layout_height="64dp"
+            android:background="@drawable/login_register_button"
+            android:fontFamily="@font/roboto_slab"
+            android:text="CONTINUE"
+            android:textColor="#FFFFFF"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:layout_constraintVertical_bias="0.222" />
+
+        <TextView
+            android:id="@+id/goToRegister"
+            android:layout_width="350dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto_slab"
+            android:text="Don't have an account? Register here!!"
+            android:textAlignment="center"
+            android:textColor="@color/dark_pink"
+            android:textSize="18dp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/contn"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

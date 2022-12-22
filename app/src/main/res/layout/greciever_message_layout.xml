@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:layout_marginTop="7dp"
+    android:layout_marginLeft="14dp"
+    android:layout_marginBottom="7dp"
+    android:layout_marginRight="5dp"
+    android:maxHeight="700dp"
+    android:maxWidth="310dp"
+    android:minHeight="30dp"
+    android:background="@drawable/reciever_bubble">
+
+
+    <TextView
+        android:id="@+id/textViewChatRecieverG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:inputType="textLongMessage|textMultiLine"
+        android:maxWidth="270dp"
+        android:minWidth="100dp"
+        android:text="TextView"
+        android:textColor="#C3073F"
+        app:layout_constraintBottom_toTopOf="@+id/timeViewRecieverG"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/idViewReciever" />
+
+    <TextView
+        android:id="@+id/timeViewRecieverG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginBottom="3dp"
+        android:layout_marginRight="3dp"
+        android:textSize="10dp"
+        android:textColor="#1A1A1D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp"/>
+
+    <TextView
+        android:id="@+id/idViewReciever"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textColor="#950740"
+        android:textSize="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

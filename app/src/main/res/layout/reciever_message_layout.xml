@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:layout_marginTop="7dp"
+    android:layout_marginLeft="14dp"
+    android:layout_marginBottom="7dp"
+    android:layout_marginRight="5dp"
+    android:maxHeight="700dp"
+    android:maxWidth="310dp"
+    android:minHeight="30dp"
+    android:background="@drawable/reciever_bubble">
+
+
+    <TextView
+        android:id="@+id/textViewChatReciever"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="270dp"
+        android:minWidth="60dp"
+        android:text="TextView"
+        android:textColor="#C3073F"
+        app:layout_constraintBottom_toTopOf="@+id/timeViewReciever"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        android:layout_margin="8dp"
+        android:inputType="textLongMessage|textMultiLine"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/timeViewReciever"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginBottom="3dp"
+        android:layout_marginRight="3dp"
+        android:textSize="10dp"
+        android:textColor="#1A1A1D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

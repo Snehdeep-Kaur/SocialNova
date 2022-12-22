@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "190180063034",
+    "firebase_url": "https://social-nova-default-rtdb.firebaseio.com",
+    "project_id": "social-nova",
+    "storage_bucket": "social-nova.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:190180063034:android:a1b1a47d27b8eff05dc203",
+        "android_client_info": {
+          "package_name": "com.example.socialnova"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "190180063034-tannvhq68ovjfv61lo1vldk2btfgu485.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.socialnova",
+            "certificate_hash": "16fa38ed715d93678b24ea75ec26d359f51ce075"
+          }
+        },
+        {
+          "client_id": "190180063034-ut07lsfqurcl2vnjjg09m2g8qo1sbc79.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDidbBfa3grRDSDmGp5XudenwqvUgbGyPI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "190180063034-ut07lsfqurcl2vnjjg09m2g8qo1sbc79.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProfileFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1A1A1D">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="413dp"
+            android:layout_height="70dp"
+            android:background="@drawable/login_register_gradient"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="141dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/roboto_slab"
+            android:text="PROFILE"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/imageView"
+            app:layout_constraintHorizontal_bias="0.704"
+            app:layout_constraintStart_toStartOf="@+id/view"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="79dp"
+            android:layout_height="70dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon2"
+            app:tint="@color/white" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ2"
+            android:layout_width="154dp"
+            android:layout_height="154dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/blank_profile"
+            app:civ_border_color="#C30735"
+            app:civ_border_width="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+        <EditText
+            android:id="@+id/showname"
+            android:layout_width="351dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/login_register_design"
+            android:drawableLeft="@drawable/ic_baseline_person_24_white"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:focusable="false"
+            android:fontFamily="@font/roboto_slab"
+            android:includeFontPadding="false"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="#4E4E50"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/civ2" />
+
+        <EditText
+            android:id="@+id/abt"
+            android:layout_width="351dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/login_register_design"
+            android:drawableLeft="@drawable/ic_baseline_info_24"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:fontFamily="@font/roboto_slab"
+            android:includeFontPadding="false"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:focusable="false"
+            android:textColor="@color/white"
+            android:textColorHint="#4E4E50"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/showname" />
+
+        <EditText
+            android:id="@+id/phn"
+            android:layout_width="351dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/login_register_design"
+            android:drawableLeft="@drawable/ic_baseline_call_24_white"
+            android:drawablePadding="10dp"
+            android:editable="false"
+            android:ems="10"
+            android:fontFamily="@font/roboto_slab"
+            android:includeFontPadding="false"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:focusable="false"
+            android:textColor="@color/white"
+            android:textColorHint="#4E4E50"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/abt" />
+
+        <TextView
+            android:id="@+id/changePic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/login_register_button"
+            android:drawableLeft="@drawable/ic_baseline_camera_alt_24_white"
+            android:fontFamily="@font/roboto_slab"
+            android:paddingLeft="13dp"
+            android:textAlignment="center"
+            android:textColor="#4E4E50"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/civ2"
+            app:layout_constraintEnd_toEndOf="@+id/civ2"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/civ2"
+            app:layout_constraintTop_toTopOf="@+id/civ2"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/editName"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:drawableLeft="@drawable/ic_baseline_edit_24"
+            android:fontFamily="@font/roboto_slab"
+            android:paddingLeft="11dp"
+            android:textAlignment="center"
+            android:textColor="#4E4E50"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/showname"
+            app:layout_constraintEnd_toEndOf="@+id/showname"
+            app:layout_constraintHorizontal_bias="0.974"
+            app:layout_constraintStart_toStartOf="@+id/showname"
+            app:layout_constraintTop_toTopOf="@+id/showname"
+            app:layout_constraintVertical_bias="0.476" />
+
+        <TextView
+            android:id="@+id/editName2"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto_slab"
+            android:text="Name"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.126"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/civ2" />
+
+        <TextView
+            android:id="@+id/editName3"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto_slab"
+            android:text="About"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.126"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/showname" />
+
+        <TextView
+            android:id="@+id/editName4"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto_slab"
+            android:text="Phone No"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.135"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/abt" />
+
+        <TextView
+            android:id="@+id/editAbout"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:drawableLeft="@drawable/ic_baseline_edit_24"
+            android:fontFamily="@font/roboto_slab"
+            android:paddingLeft="11dp"
+            android:textAlignment="center"
+            android:textColor="#4E4E50"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/abt"
+            app:layout_constraintEnd_toEndOf="@+id/abt"
+            app:layout_constraintHorizontal_bias="0.974"
+            app:layout_constraintStart_toStartOf="@+id/abt"
+            app:layout_constraintTop_toTopOf="@+id/abt"
+            app:layout_constraintVertical_bias="0.476" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/changeProfile"
+            android:layout_width="326dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/login_register_button"
+            android:fontFamily="@font/roboto_slab"
+            android:text="Save Profile"
+            android:textColor="#FFFFFF"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phn" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

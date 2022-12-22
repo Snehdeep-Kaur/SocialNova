@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_gravity="bottom"
+    android:background="@drawable/bottomsheetgradient">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="top"
+        android:text="Create a new"
+        android:textSize="22dp"
+        android:gravity="center|bottom"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/roboto_slab"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/chatNew"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/chaticon"
+                app:civ_border_color="#C30735"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_marginTop="10dp"
+                android:text="Contact"
+                android:layout_gravity="center"
+                android:textSize="20dp"
+                android:gravity="center|top"
+                android:fontFamily="@font/roboto_slab"
+                android:textColor="#FFFFFF"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/groupNew"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/groupicon"
+                app:civ_border_color="#C30735"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Group"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:gravity="center|top"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/roboto_slab"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
